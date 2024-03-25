@@ -216,7 +216,9 @@ body {
     margin-left:auto;
     margin-right: auto;
     transition: all .5s;
-    max-width: 40rem;
+    width: 75%;
+    height: auto;
+    object-fit: contain;
 }
 .main1_logo:hover {
     transform: scale(1.05)
@@ -224,7 +226,7 @@ body {
 
 .main1_description {
     text-align: center;
-    font-size:3rem;
+    font-size:3vw; /* 或者你想要的任何百分比 */
     margin-bottom: var(--nice-padding);
     margin-left: 1rem;
     margin-right: 1rem;
@@ -233,6 +235,7 @@ body {
 .main1_actcent {
     font-weight: 800;
     color:var(--accent1);
+    font-size:3vw; /* 或者你想要的任何百分比 */
 }
 
 .main1_ipcopier {
@@ -342,7 +345,7 @@ body {
 
 .main2_feature_img {
     width: 100%;
-    height: 50%;
+    height: 100%;
     object-fit: cover;
     border-radius: var(--roundness);
 }
@@ -743,4 +746,14 @@ body {
     .main3_join_div_div {
         margin: .25rem;
     }
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.mainflex-download {
+    padding-top: 60px; /* 调整这个值以适应你的需求 */
 }
