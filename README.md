@@ -3,7 +3,7 @@
 
 ## Description
 
-This is a simple CLR server that based on ![MCServer-Web-Template](https://fqqd.github.io/MCServer-Web-Template/) 
+This is a simple CLR server that based on ![**_FQQD's MCServer Website Template 1.0_**](https://fqqd.github.io/MCServer-Web-Template/)
 
 ## Features
 - **Modern Design**: The CLR Server website features a sleek and modern design that is visually appealing and easy to navigate. The design is responsive, ensuring that it looks great on both desktop and mobile devices.
