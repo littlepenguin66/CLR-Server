@@ -16,7 +16,7 @@
       <a href="https://minecraft.wiki/" class="desktop_navbar_link">Wiki</a>
       <a href="download.html" class="desktop_navbar_link scroll">Download</a>
       <div class="desktop_navbar_link2_div">
-          <a href="#join" class="desktop_navbar_link2">Join Us!</a>
+          <a href="index.html#join" class="desktop_navbar_link2">Join Us!</a>
       </div>
     </nav>
     <div class="mobile_navbar">
@@ -35,26 +35,32 @@
         <h1 class="headline">Download Section</h1>
         <div class="main3_join_div_div">
           <div class="main3_join_div">
-            <h2 class="main3_join_title">Download File 1</h2>
+            <h2 class="main3_join_title">Download Create</h2>
             <div class="main3_join_content_div">
               <div class="main3_join_categories">
-                <p><a href="path/to/file1" download>Click here to download</a></p>
+                <p><a href="files/CLR-Create-Server-v1.8.0.zip" download onclick="showDownloadMessage()">Click here to download</a></p>
               </div>
             </div>
           </div>
           <div class="main3_join_div">
-            <h2 class="main3_join_title">Download File 2</h2>
+            <h2 class="main3_join_title">Download 1.20</h2>
             <div class="main3_join_content_div">
               <div class="main3_join_categories">
-                <p><a href="path/to/file2" download>Click here to download</a></p>
+                <p><a href="path/to/file2" download onclick="showDownloadMessage()">Click here to download</a></p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <footer class="footer copyright_div">
         <a href="https://github.com/littlepenguin66" class="copyright">Edited by LittleLenguin 2024</a>
     </footer>
+    <script>
+        function showDownloadMessage() {
+            alert("Your download is starting. Enjoy the game!");
+        }
+    </script>
   </body>
 </html>

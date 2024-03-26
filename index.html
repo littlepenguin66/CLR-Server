@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CLR Server</title>
+    <title>CLR</title>
     <link rel="icon" type="image/png" href="media/favicon.png">
     <link rel="stylesheet" href="media/style.css">
-    <link href="https://fonts.bunny.net/css?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="media/httpsfonts.bunny.netcssfamily=Space+Groteskwght@500&display=swap.css" rel="stylesheet">
+    <link rel="stylesheet" href="media/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="media/https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <nav class="desktop_navbar">
       <a href="#"><img class="desktop_navbar_logo_img" src="media/logo_small.png" alt="logo"></a>
       <a href="https://minecraft.wiki/" class="desktop_navbar_link">Wiki</a>
       <a href="#discord" class="desktop_navbar_link scroll">Community</a>
       <a href="#about" class="desktop_navbar_link scroll">About Us</a>
-      <a href="download.html" class="desktop_navbar_link" target="_blank">Download</a>
+      <a href="download.html" class="desktop_navbar_link">Download</a>
       <div class="desktop_navbar_link2_div">
           <a href="#join" class="desktop_navbar_link2 scroll">Join Us!</a>
       </div>
@@ -36,8 +36,8 @@
         </div>
         <script>
             function mobile_navbar_link_hider() {
-            var x = document.getElementById("mobile_navbar_links");
-            if (x.style.display === "flex") {
+              const x = document.getElementById("mobile_navbar_links");
+              if (x.style.display === "flex") {
                 x.style.display = "none";
             } else {
                 x.style.display = "flex";
@@ -67,9 +67,9 @@
                 }
             $(document).ready(function() {
             $('.main1_ipcopier').click(function() {
-                var popup = $('<div>', { class: 'main1_popup' })
-                .append($('<h3 class="copy_confirm">').text('Copied IP to clipboard'))
-                $(this).after(popup);
+              const popup = $('<div>', {class: 'main1_popup'})
+                      .append($('<h3 class="copy_confirm">').text('Copied IP to clipboard'));
+              $(this).after(popup);
                 setTimeout(function() {
                 popup.remove();
                 }, 1000);
@@ -103,35 +103,14 @@
             <a href="https://bilibili.com" target="_blank">
               <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
               <a class="main2_feature_headline">1.20</a>
-              <a class="main2_feature_text">Feature description</a>
+              <a class="main2_feature_text">A Minecraft 1.20 Server</a>
             </a>
           </div>
           <div class="main2_feature">
             <a href="https://bilibili.com" target="_blank">
               <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
               <a class="main2_feature_headline">Create</a>
-              <a class="main2_feature_text">Feature description</a>
-            </a>
-          </div>
-          <div class="main2_feature">
-            <a href="https://bilibili.com" target="_blank">
-              <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
-              <a class="main2_feature_headline">Feature 3</a>
-              <a class="main2_feature_text">Feature description</a>
-            </a>
-          </div>
-          <div class="main2_feature">
-            <a href="https://bilibili.com" target="_blank">
-              <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
-              <a class="main2_feature_headline">Feature 4</a>
-              <a class="main2_feature_text">Feature description</a>
-            </a>
-          </div>
-          <div class="main2_feature">
-            <a href="https://bilibili.com" target="_blank">
-              <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
-              <a class="main2_feature_headline">Feature 5</a>
-              <a class="main2_feature_text">Feature description</a>
+              <a class="main2_feature_text">Modpack for Create mod</a>
             </a>
           </div>
         </div>
@@ -140,11 +119,11 @@
       <div class="main4">
         <a class="headline">Join the Discord</a>
         <div class="main4_dc_div">
-          <iframe class="main4_dc_widget" src="https://imgur.com/78RPeUY.png" width="350" height="500" title="discord" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+          <iframe class="main4_dc_widget" src="media/bg.png" width="350" height="500" title="discord" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
           <div class="main4_dc_description_div">
             <a class="main4_dc_description_title">Let's talk!</a>
             <a class="main4_dc_description"> ・Meet other players <br> ・Ask questions <br> ・Get notified about updates <br> ・Give feedback  <br><br> &amp; more </a>
-            <a href="https://discord.gg/INVITE" class="main4_dc_button_a">
+            <a href="https://teamspeak.com/en/downloads/" class="main4_dc_button_a">
               <div class="main4_dc_button">Join</div>
             </a>
           </div>
@@ -155,84 +134,166 @@
         <a class="headline">Who we are</a>
         <div class="main5_admin_div">
           <div class="main5_admins_div main5_admins_dev_type2">
-            <img class="main5_admins_img" alt="admin member img" src="media/member_placeholder.webp">
+            <img class="main5_admins_img" alt="admin member img" src="media/mcpfp/mcpfp - DSTJohnXie.png">
             <div class="main5_admins_description_div">
-              <a class="main5_admins_description_rank main5_admins_description_rank_owner">[Server Owner]</a>
+              <a class="main5_admins_description_rank main5_admins_description_rank_owner">Server Owner</a>
               <a class="main5_admins_description_title" href="https://example.com">DSTJohnXie</a>
               <a class="main5_admins_description">Owner<br>description</a>
             </div>
           </div>
           <div class="main5_admins_div main5_admins_dev_type1">
-            <img class="main5_admins_img" alt="admin member img" src="media/member_placeholder.webp">
+            <img class="main5_admins_img" alt="admin member img" src="media/mcpfp/mcpfp - little_penguin66.png">
             <div class="main5_admins_description_div">
-              <a class="main5_admins_description_rank main5_admins_description_rank_admin">[Server Admin]</a>
-              <a class="main5_admins_description_title" href="https://example.com">little_penguin66</a>
+              <a class="main5_admins_description_rank main5_admins_description_rank_admin">Server Admin</a>
+              <a class="main5_admins_description_title" href="https://github.com/littlepenguin66">little_penguin66</a>
               <a class="main5_admins_description">Admin<br>description</a>
             </div>
           </div>
         </div>
         <div class="main5_supporter_div">
           <div class="main5_supporters_div">
-            <img class="main5_supporters_img" alt="supporters member img" src="media/member_placeholder.webp">
+            <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - haorenjiejie.png">
             <div class="main5_supporters_description_div">
-              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Supporter]</a>
-              <a class="main5_supporters_description_title">haorenjiejie</a>
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">Supporter</a>
+              <a class="main5_supporters_description_title" href="https://github.com/littlepenguin66">haorenjiejie</a>
               <a class="main5_supporters_description">Supporter<br>Description</a>
             </div>
           </div>
           <div class="main5_supporters_div">
-            <img class="main5_supporters_img" alt="supporters member img" src="media/member_placeholder.webp">
+            <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - vinceack.png">
             <div class="main5_supporters_description_div">
-              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Supporter]</a>
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">Supporter</a>
               <a class="main5_supporters_description_title">vinceack</a>
               <a class="main5_supporters_description">Supporter<br>Description</a>
             </div>
           </div>
           <div class="main5_supporters_div">
-            <img class="main5_supporters_img" alt="supporters member img" src="media/member_placeholder.webp">
+            <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - ouwcato.png">
             <div class="main5_supporters_description_div">
-              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Supporter]</a>
-              <a class="main5_supporters_description_title">Replacable Supporter 3</a>
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">Supporter</a>
+              <a class="main5_supporters_description_title">ouwcato</a>
               <a class="main5_supporters_description">Supporter<br>Description</a>
             </div>
           </div>
           <div class="main5_supporters_div">
-            <img class="main5_supporters_img" alt="supporters member img" src="media/member_placeholder.webp">
+            <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - XiaoXie_Pro.png">
             <div class="main5_supporters_description_div">
-              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Supporter]</a>
-              <a class="main5_supporters_description_title">Replacable Supporter 4</a>
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">Supporter</a>
+              <a class="main5_supporters_description_title">XiaoXie_Pro</a>
+              <a class="main5_supporters_description">Supporter<br>Stupid</a>
+            </div>
+          </div>
+            <div class="main5_supporters_div">
+              <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - Elements007.png">
+              <div class="main5_supporters_description_div">
+                <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">Supporter</a>
+                <a class="main5_supporters_description_title">Elements007</a>
+                <a class="main5_supporters_description">Supporter<br>Description</a>
+              </div>
+            </div>
+            <div class="main5_supporters_div">
+              <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - XiaoTaBI.png">
+              <div class="main5_supporters_description_div">
+                <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">Supporter</a>
+                <a class="main5_supporters_description_title">XiaoTaBI</a>
+                <a class="main5_supporters_description">Supporter<br>Description</a>
+              </div>
+            </div>
+            <div class="main5_supporters_div">
+              <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - Glazed1Light.png">
+              <div class="main5_supporters_description_div">
+                <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">Supporter</a>
+                <a class="main5_supporters_description_title">Glazed1Light</a>
+                <a class="main5_supporters_description">Supporter<br>Description</a>
+              </div>
+            </div>
+            <div class="main5_supporters_div">
+              <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - innov_FX.png">
+              <div class="main5_supporters_description_div">
+                <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">Supporter</a>
+                <a class="main5_supporters_description_title">innov_FX</a>
+                <a class="main5_supporters_description">Supporter<br>Description</a>
+              </div>
+            </div>
+            <div class="main5_supporters_div">
+              <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - Ast1ck.png">
+              <div class="main5_supporters_description_div">
+                <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">Supporter</a>
+                <a class="main5_supporters_description_title">Ast1ck</a>
+                <a class="main5_supporters_description">Supporter<br>Description</a>
+              </div>
+            </div>
+            <div class="main5_supporters_div">
+              <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - Kawakami_hidari.png">
+              <div class="main5_supporters_description_div">
+                <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">Supporter</a>
+                <a class="main5_supporters_description_title">Kawakami_hidari</a>
+                <a class="main5_supporters_description">Supporter<br>Description</a>
+              </div>
+            </div>
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - xingyan123.png">
+            <div class="main5_supporters_description_div">
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">Supporter</a>
+              <a class="main5_supporters_description_title">xingyan123</a>
               <a class="main5_supporters_description">Supporter<br>Description</a>
             </div>
           </div>
-        </div>
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - SnoozingRib.png">
+            <div class="main5_supporters_description_div">
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">Supporter</a>
+              <a class="main5_supporters_description_title">SnoozingRib</a>
+              <a class="main5_supporters_description">Supporter<br>Description</a>
+            </div>
+          </div>
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - small_zai.png">
+            <div class="main5_supporters_description_div">
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">Supporter</a>
+              <a class="main5_supporters_description_title">small_zai</a>
+              <a class="main5_supporters_description">Supporter<br>Description</a>
+            </div>
+          </div>
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - Zoniate_.png">
+            <div class="main5_supporters_description_div">
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">Supporter</a>
+              <a class="main5_supporters_description_title">Zoniate</a>
+              <a class="main5_supporters_description">Supporter<br>Description</a>
+            </div>
+          </div>
+          </div>
       </div>
       <div id="join"></div>
       <div class="main3">
-        <a class="headline">How to join</a>
+        <a class="headline">How to join?</a>
+        <a class="headline">Download Modpack in</a>
+        <a href="download.html" class="headline" target="_blank">Download</a>
         <div class="main3_join_div_div">
           <div class="main3_join_div">
-            <a class="main3_join_title">Java</a>
-            <div class="main3_join_content_div">
-              <div class="main3_join_categories">
-                <a>IP:</a>
-                <a>Version:</a>
-              </div>
-              <div class="main3_join_values">
-                <a>play.example.com</a>
-                <a>1.20.1</a>
-              </div>
-            </div>
-          </div>
-          <div class="main3_join_div">
-            <a class="main3_join_title">Bedrock</a>
+            <a class="main3_join_title">Create</a>
             <div class="main3_join_content_div">
               <div class="main3_join_categories">
                 <a>IP:</a>
                 <a>Port:</a>
               </div>
               <div class="main3_join_values">
-                <a>be.example.com</a>
-                <a>69420</a>
+                <a>clr.clrserver.top</a>
+                <a>12345</a>
+              </div>
+            </div>
+          </div>
+          <div class="main3_join_div">
+            <a class="main3_join_title">1.20</a>
+            <div class="main3_join_content_div">
+              <div class="main3_join_categories">
+                <a>IP:</a>
+                <a>Port:</a>
+              </div>
+              <div class="main3_join_values">
+                <a>clr.clrserver.top</a>
+                <a>11451</a>
               </div>
             </div>
           </div>
@@ -242,5 +303,5 @@
     <footer class="copyright_div">
       <a href="https://github.com/littlepenguin66" class="copyright">Edited by LittleLenguin 2024</a>
     </footer>
-  </body>
+</body>
 </html>
