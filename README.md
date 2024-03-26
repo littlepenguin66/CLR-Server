@@ -1,89 +1,26 @@
+# CLR Server raw code
+![logo](media/Clr-create-server.png)
 
-![Logo](https://imgur.com/VE1nWC7.png)
+## Description
 
-
-# FQQD's MCServer Website Template 1.0
-
-A template for a modern looking website to promote your Minecraft server.
-
-Written with HTML and a lot of CSS and the minimal usage of JavaScript.
-
-Test it out: https://fqqd.github.io/MCServer-Web-Template/index.html
-
+This is a simple CLR server that based on ![MCServer-Web-Template](https://fqqd.github.io/MCServer-Web-Template/) 
 
 ## Features
-
-- Server adress copy button
-- Modern design
-- Discord server embed
-- Team member cards
-- Bedrock and Java IP cards
-- Navbar
-- Mobile support
-- Simple Configuration
-- Hover animations
-
-
-## FAQ
-
-#### How do I personalize this website?
-
-To edit this website, simply fork the repository and edit the "index.html" and the "style.css" in the "media" folder. 
-Reading through the code should be enough to understand what you are able to edit.
-
-#### How do I make the Discord Embed work?
-
--  Go to Discord Server Settings
-- "Widget"
-- Enable Server Widget
-- Select an Invite Channel (e.g. the main chat)
-- Manually copy ONLY THE LINK ("https://discord.com/widget?id=[SERVER-ID]&theme=dark")
-- Replace the imgur link in the Discord Section with the Discord Widget link
-
-#### Where can I host this website?
-
-I recommend hosting the website on your own Linux VServer with Caddyserver, but if you need to have a free hosting service, I recommend Neocities or GitHub Pages.
-
-#### Why would I need such a website?
-
-This website can help to provide additional information about your Minecraft Server and get people to join it.
-
-#### Can I use this freely without copyright?
-
-You can use and edit the website as much as you want, as long as the "Made by FQQD 2023" stays on the bottom of the site unchanged.
-
-## Screenshots
-
-![App Screenshot](https://imgur.com/zOqKk56.png)
-
-
-![App Screenshot](https://imgur.com/Th7NzCh.png)
-
-
-![App Screenshot](https://imgur.com/dhUnvAK.png)
-
-
-![App Screenshot](https://imgur.com/hgX2Ztd.png)
-
-
-![App Screenshot](https://imgur.com/aSpvshJ.png)
-
-
-![App Screenshot](https://imgur.com/v01GJAw.png)
-
-
-## Usage/Examples
-
-![App Screenshot](https://imgur.com/8ic4MS7.png)
-## Authors
-
-- [@FQQD](https://fqqd.de)
-- Originally made for [@HerrFisch](https://www.github.com/HerrFisch)
-
-
-## Lastly...
-If you have any further question or want to help and contribute, the best ways to do this are
-- Creating an issue report
-- Joining [my discord](https://dc.fqqd.de) and asking for help
-
-Here's a cookie for reading this far: 🍪
+- **Modern Design**: The CLR Server website features a sleek and modern design that is visually appealing and easy to navigate. The design is responsive, ensuring that it looks great on both desktop and mobile devices.
+- **Server Information**: The website provides all the necessary information about the server, including its IP address, port number, and the version of Minecraft it supports.
+- **Modpack Integration**: The server offers a custom Modpack for the Create mod, enhancing the creative possibilities within the game.
+- **Community Engagement**: There are options to join the server's Discord community, where players can meet, ask questions, receive updates, and provide feedback.
+- **Supporter Recognition**: The website showcases the server's supporters, acknowledging their contributions to the community.
+## Usage
+- **Installation**: To set up the CLR Server website, you will need to host the provided HTML, CSS, and JavaScript files on a web server. The repository includes instructions for configuring the website with Caddyserver on a Linux VServer, as well as options for free hosting on platforms like Neocities or GitHub Pages.
+- **Customization**: Personalize the website by editing the `index.html` file and the `style.css` file within the `media` folder. Update the server details, team member information, and any other content to reflect your server's identity.
+- **Maintenance**: Regularly update the website to ensure that the information provided is current and accurate.
+## Contributing
+Contributions to the CLR Server project are welcome. If you have suggestions for improvements, bug fixes, or new features, you can submit a pull request on the GitHub repository. Please ensure that any contributions adhere to the existing code style and maintain the overall aesthetic and functionality of the website.
+## Support
+For support with the CLR Server website, you can:
+- **Check the Issues**: The GitHub repository's issues section can be a resource for troubleshooting common problems or finding solutions to issues you may encounter.
+- **Join the Discord**: For more direct assistance, join the CLR Server Discord community to interact with other server members and the development team.
+## Credits
+- **Template Creator**: This project is based on the MCServer-Web-Template created by FQQD. Special thanks to FQQD for the original design and functionality.
+- **Contributors**: Thank you to all the contributors who have helped improve the CLR Server website.
