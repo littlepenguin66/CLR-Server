@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Page</title>
+    <link rel="icon" type="image/png" href="media/favicon.png">
+    <link rel="stylesheet" href="media/style.css">
+    <link href="https://fonts.bunny.net/css?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<nav class="desktop_navbar">
+    <a href="index.html"><img class="desktop_navbar_logo_img" src="media/logo_small.png" alt="logo"></a>
+    <a href="https://minecraft.wiki/" class="desktop_navbar_link">维基</a>
+    <a href="download.html" class="desktop_navbar_link scroll">下载</a>
+    <div class="desktop_navbar_link2_div">
+        <a href="index.html#join" class="desktop_navbar_link2">加入我们!</a>
+    </div>
+</nav>
+<div class="mobile_navbar">
+    <a href="#" class="mobile_navbar_logo_img_a"><img class="mobile_navbar_logo_img" src="media/logo_small.png" alt="logo"></a>
+    <div id="mobile_navbar_links">
+        <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="https://minecraft.wiki/">维基</a>
+        <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="download.html">下载</a>
+        <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="index.html#join">加入我们</a>
+    </div>
+    <div class="icon" onclick="mobile_navbar_link_hider()">
+        <i class="fa fa-bars"></i>
+    </div>
+</div>
+<section class="mainflex mainflex-download">
+    <div class="main3">
+        <h1 class="headline">下载项目</h1>
+        <div class="main3_join_div_div">
+            <div class="main3_join_div">
+                <h2 class="main3_join_title">下载 Create</h2>
+                <div class="main3_join_content_div">
+                    <div class="main3_join_categories">
+                        <p><a href="files/CLR-Create-Server-v1.8.0.zip" download onclick="showDownloadMessage()">点击下载</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="main3_join_div">
+                <h2 class="main3_join_title">下载 1.20</h2>
+                <div class="main3_join_content_div">
+                    <div class="main3_join_categories">
+                        <p><a href="path/to/file2" download onclick="showDownloadMessage()">点击下载</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer copyright_div">
+    <a href="https://github.com/littlepenguin66" class="copyright">Edited by LittleLenguin 2024</a>
+</footer>
+<script>
+    function showDownloadMessage() {
+        alert("Your download is starting. Enjoy the game!");
+    }
+</script>
+</body>
+</html>

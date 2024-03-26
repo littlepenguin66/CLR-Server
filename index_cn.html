@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLR</title>
+    <link rel="icon" type="image/png" href="media/logo_small.png">
+    <link rel="stylesheet" href="media/style.css">
+    <link href="media/httpsfonts.bunny.netcssfamily=Space+Groteskwght@500&display=swap.css" rel="stylesheet">
+    <link rel="stylesheet" href="media/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<script src="media/https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<nav class="desktop_navbar">
+    <a href="#"><img class="desktop_navbar_logo_img" src="media/logo_small.png" alt="logo"></a>
+    <a href="https://minecraft.wiki/" class="desktop_navbar_link">维基</a>
+    <a href="#discord" class="desktop_navbar_link scroll">社区</a>
+    <a href="#about" class="desktop_navbar_link scroll">关于我们</a>
+    <a href="download.html" class="desktop_navbar_link">下载</a>
+    <div class="desktop_navbar_link2_div">
+        <a href="#join" class="desktop_navbar_link2 scroll">加入我们!</a>
+    </div>
+</nav>
+<div class="mobile_navbar">
+    <a href="#" class="mobile_navbar_logo_img_a"><img class="mobile_navbar_logo_img" src="media/logo_small.png" alt="logo"></a>
+    <div id="mobile_navbar_links">
+        <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="https://minecraft.wiki/">维基</a>
+        <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#discord">社区</a>
+        <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#about">关于我们</a>
+        <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="download.html" target="_blank">下载</a>
+        <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#join">加入我们！</a>
+    </div>
+    <div class="icon" onclick="mobile_navbar_link_hider()">
+        <i class="fa fa-bars"></i>
+    </div>
+    <script>
+        function mobile_navbar_link_hider() {
+            const x = document.getElementById("mobile_navbar_links");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+    </script>
+</div>
+<div class="main flex">
+    <div class="main1">
+        <a class="main1_logo_a" href="#">
+            <img class="main1_logo" src="media/CLRCRAFT.png" alt="logo">
+        </a>
+        <div class="main1_description">
+            <a>Minecraft,<br>CLR</a>
+            <a class="main1_actcent">开启你的第二人生</a><a>.</a>
+        </div>
+        <div class="main1_ipcopier_div">
+            <button class="main1_ipcopier" onclick="copyText()" type="button">
+                <span class="main1_ipcopier_text1">clr.clrserver.top</span>
+                <br>
+                <span class="main1_ipcopier_text2">点击复制</span>
+            </button>
+            <script>
+                function copyText() {
+                    navigator.clipboard.writeText
+                    ("clr.clrserver.top");
+                }
+                $(document).ready(function() {
+                    $('.main1_ipcopier').click(function() {
+                        const popup = $('<div>', {class: 'main1_popup'})
+                            .append($('<h3 class="copy_confirm">').text('Copied IP to clipboard'));
+                        $(this).after(popup);
+                        setTimeout(function() {
+                            popup.remove();
+                        }, 1000);
+                    });
+                });
+            </script>
+        </div>
+        <a href="#more" class="scroll">
+            <img alt="downarrow" class="main1_downarrow" src="media/downarrow.png">
+        </a>
+        <script>
+            const scrollLinks = document.querySelectorAll('.scroll');
+            scrollLinks.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const target = document.querySelector(link.getAttribute('href'));
+                    const offsetTop = target.offsetTop;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+    </div>
+    <div id="more"></div>
+    <div class="main2">
+        <a class="headline">我们的服务器</a>
+        <div class="main2_features_div">
+            <div class="main2_feature">
+                <a href="https://bilibili.com" target="_blank">
+                    <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
+                    <a class="main2_feature_headline">1.20</a>
+                    <a class="main2_feature_text">1.20生存</a>
+                </a>
+            </div>
+            <div class="main2_feature">
+                <a href="https://bilibili.com" target="_blank">
+                    <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
+                    <a class="main2_feature_headline">Create</a>
+                    <a class="main2_feature_text">机械动力生存</a>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="discord"></div>
+    <div class="main4">
+        <a class="headline">加入Teamspeak</a>
+        <div class="main4_dc_div">
+            <iframe class="main4_dc_widget" src="media/TS-invite.png" width="350" height="500" title="discord" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            <div class="main4_dc_description_div">
+                <a class="main4_dc_description_title">加入我们！</a>
+                <a class="main4_dc_description"> ・遇见新伙伴 <br> ・解决问题 <br> ・了解最新更新 <br> ・反馈服务器问题  <br><br> & 更多 </a>
+                <a href="https://teamspeak.com/en/downloads/" class="main4_dc_button_a">
+                    <div class="main4_dc_button">点击下载</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="about"></div>
+    <div class="main5">
+        <a class="headline">我们是谁</a>
+        <div class="main5_admin_div">
+            <div class="main5_admins_div main5_admins_dev_type2">
+                <img class="main5_admins_img" alt="admin member img" src="media/mcpfp/mcpfp - DSTJohnXie.png">
+                <div class="main5_admins_description_div">
+                    <a class="main5_admins_description_rank main5_admins_description_rank_owner">服主</a>
+                    <a class="main5_admins_description_title" href="https://example.com">DSTJohnXie</a>
+                    <a class="main5_admins_description">服主<br>某学艺术的大学生有资本家的丑陋嘴脸</a>
+                </div>
+            </div>
+            <div class="main5_admins_div main5_admins_dev_type1">
+                <img class="main5_admins_img" alt="admin member img" src="media/mcpfp/mcpfp - little_penguin66.png">
+                <div class="main5_admins_description_div">
+                    <a class="main5_admins_description_rank main5_admins_description_rank_admin">管理员</a>
+                    <a class="main5_admins_description_title" href="https://github.com/littlepenguin66">little_penguin66</a>
+                    <a class="main5_admins_description">管理员<br>被服主疯狂压榨的非计算机专业<br>却得干计算机专业的事情<br>每天还得被早八折磨的苦逼大学生</a>
+                </div>
+            </div>
+        </div>
+        <div class="main5_supporter_div">
+            <div class="main5_supporters_div">
+                <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - haorenjiejie.png">
+                <div class="main5_supporters_description_div">
+                    <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">成员</a>
+                    <a class="main5_supporters_description_title" href="https://github.com/littlepenguin66">haorenjiejie</a>
+                    <a class="main5_supporters_description">成员<br>因为原神所以起名好人姐姐</a>
+                </div>
+            </div>
+            <div class="main5_supporters_div">
+                <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - vinceack.png">
+                <div class="main5_supporters_description_div">
+                    <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">成员</a>
+                    <a class="main5_supporters_description_title">vinceack</a>
+                    <a class="main5_supporters_description">成员<br>长得像木头所以叫木头人</a>
+                </div>
+            </div>
+            <div class="main5_supporters_div">
+                <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - ouwcato.png">
+                <div class="main5_supporters_description_div">
+                    <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">成员</a>
+                    <a class="main5_supporters_description_title">ouwcato</a>
+                    <a class="main5_supporters_description">成员<br>爱打彩六的二刺螈🐱</a>
+                </div>
+            </div>
+            <div class="main5_supporters_div">
+                <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - XiaoXie_Pro.png">
+                <div class="main5_supporters_description_div">
+                    <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">成员</a>
+                    <a class="main5_supporters_description_title">XiaoXie_Pro</a>
+                    <a class="main5_supporters_description">成员<br>速通手法pvp枪男</a>
+                </div>
+            </div>
+            <div class="main5_supporters_div">
+                <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - Elements007.png">
+                <div class="main5_supporters_description_div">
+                    <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">成员</a>
+                    <a class="main5_supporters_description_title">Elements007</a>
+                    <a class="main5_supporters_description">成员<br>————></a>
+                </div>
+            </div>
+            <div class="main5_supporters_div">
+                <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - XiaoTaBI.png">
+                <div class="main5_supporters_description_div">
+                    <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">成员</a>
+                    <a class="main5_supporters_description_title">XiaoTaBI</a>
+                    <a class="main5_supporters_description">成员<br><————</a>
+                </div>
+            </div>
+            <div class="main5_supporters_div">
+                <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - Glazed1Light.png">
+                <div class="main5_supporters_description_div">
+                    <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">成员</a>
+                    <a class="main5_supporters_description_title">Glazed1Light</a>
+                    <a class="main5_supporters_description">成员<br>不知道怎么描述</a>
+                </div>
+            </div>
+            <div class="main5_supporters_div">
+                <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - innov_FX.png">
+                <div class="main5_supporters_description_div">
+                    <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">成员</a>
+                    <a class="main5_supporters_description_title">innov_FX</a>
+                    <a class="main5_supporters_description">成员<br>米元帅足以形容它的成分</a>
+                </div>
+            </div>
+            <div class="main5_supporters_div">
+                <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - Ast1ck.png">
+                <div class="main5_supporters_description_div">
+                    <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">成员</a>
+                    <a class="main5_supporters_description_title">Ast1ck</a>
+                    <a class="main5_supporters_description">成员<br>不知道怎么描述</a>
+                </div>
+            </div>
+            <div class="main5_supporters_div">
+                <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - Kawakami_hidari.png">
+                <div class="main5_supporters_description_div">
+                    <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">成员</a>
+                    <a class="main5_supporters_description_title">Kawakami_hidari</a>
+                    <a class="main5_supporters_description">成员<br>一拳打死福男</a>
+                </div>
+            </div>
+            <div class="main5_supporters_div">
+                <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - xingyan123.png">
+                <div class="main5_supporters_description_div">
+                    <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">成员</a>
+                    <a class="main5_supporters_description_title">xingyan123</a>
+                    <a class="main5_supporters_description">成员<br>不知道怎么描述</a>
+                </div>
+            </div>
+            <div class="main5_supporters_div">
+                <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - SnoozingRib.png">
+                <div class="main5_supporters_description_div">
+                    <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">成员</a>
+                    <a class="main5_supporters_description_title">SnoozingRib</a>
+                    <a class="main5_supporters_description">成员<br>清纯阳光美女游戏宅</a>
+                </div>
+            </div>
+            <div class="main5_supporters_div">
+                <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - PotatoU0323.png">
+                <div class="main5_supporters_description_div">
+                    <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">成员</a>
+                    <a class="main5_supporters_description_title">PotatoU0323</a>
+                    <a class="main5_supporters_description">成员<br>不知道怎么描述</a>
+                </div>
+            </div>
+            <div class="main5_supporters_div">
+                <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - Nanamikawayii.png">
+                <div class="main5_supporters_description_div">
+                    <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">成员</a>
+                    <a class="main5_supporters_description_title">Nanamikawayii</a>
+                    <a class="main5_supporters_description">成员<br>不知道怎么描述</a>
+                </div>
+            </div>
+            <div class="main5_supporters_div">
+                <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - small_zai.png">
+                <div class="main5_supporters_description_div">
+                    <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">成员</a>
+                    <a class="main5_supporters_description_title">small_zai</a>
+                    <a class="main5_supporters_description">成员<br>不知道怎么描述</a>
+                </div>
+            </div>
+            <div class="main5_supporters_div">
+                <img class="main5_supporters_img" alt="supporters member img" src="media/mcpfp/mcpfp - Zoniate_.png">
+                <div class="main5_supporters_description_div">
+                    <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">成员</a>
+                    <a class="main5_supporters_description_title">Zoniate</a>
+                    <a class="main5_supporters_description">成员<br>不知道怎么描述</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="join"></div>
+    <div class="main3">
+        <a class="headline">怎么加入我们?</a>
+        <a class="headline">下载我们的模组包</a>
+        <a href="download.html" class="headline" target="_blank">下载</a>
+        <div class="main3_join_div_div">
+            <div class="main3_join_div">
+                <a class="main3_join_title">Create</a>
+                <div class="main3_join_content_div">
+                    <div class="main3_join_categories">
+                        <a>IP:</a>
+                        <a>Port:</a>
+                    </div>
+                    <div class="main3_join_values">
+                        <a>clr.clrserver.top</a>
+                        <a>12345</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main3_join_div">
+                <a class="main3_join_title">1.20</a>
+                <div class="main3_join_content_div">
+                    <div class="main3_join_categories">
+                        <a>IP:</a>
+                        <a>Port:</a>
+                    </div>
+                    <div class="main3_join_values">
+                        <a>clr.clrserver.top</a>
+                        <a>11451</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="copyright_div">
+    <a href="https://github.com/littlepenguin66" class="copyright">Made by FQQD 2023 Edited by LittleLenguin 2024</a>
+</footer>
+</body>
+</html>
