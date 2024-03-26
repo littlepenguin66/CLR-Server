@@ -84,7 +84,7 @@ body {
 }
 
 .desktop_navbar_logo_img {
-    width: 5rem;
+    width: 30px;
     padding-left: 2rem;
     padding-right: 1rem;
 }
@@ -199,7 +199,7 @@ body {
     align-items: center;
     align-content: center;
     justify-content: center;
-    background: rgba(0, 0, 0, .5) url('https://imgur.com/cGMLytH.png');
+    background: rgba(0, 0, 0, .5) url('bg.png');
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -652,12 +652,6 @@ body {
     border-left: 3px solid var(--background2);
     padding-left: .75rem;
 }
-
-
-
-
-
-
 
 /* Copyright Text */
 
